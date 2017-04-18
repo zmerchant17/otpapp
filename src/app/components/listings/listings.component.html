@@ -1,0 +1,8 @@
+<div class="text-center">
+	<h1>The Hottest</h1>
+	<ul class="list-group">
+		<li class="list-group-item" *ngFor="let listing of listings">
+			<a [routerLink]="['/listing/'+listing.$key]">{{listing.name}}</a>
+		</li>
+	</ul>
+</div>
